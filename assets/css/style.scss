@@ -1,0 +1,210 @@
+$fontStack: 'Spartan', sans-serif;
+$colorBeige: #e5e4e1;
+$colorBlue: #3498db;
+$colorLightGrey: #f3f3f3;
+
+body {
+    margin: 0;
+
+    .section {
+        max-width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+
+        .loader {
+            border: 8px solid $colorLightGrey;
+            border-top: 8px solid $colorBlue;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 2s linear infinite;
+            margin: 0 auto;
+            margin-top: 60%;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .all-content {
+            width: 100%;
+            max-width: 375px;
+            margin: 0 auto;
+            display: none;
+
+            .image-preview-picker {
+                margin: 0 auto;
+                padding-top: 30px;
+                display: table;
+                margin-bottom: 20px;
+
+                .list-icon {
+                    width: 25px;
+                    height: 30px;
+                    margin: 0 10px;
+                }
+
+                .grid-icon {
+                    width: 25px;
+                    height: 25px;
+                    margin: 0 10px;
+                }
+
+                .active {
+                    filter: invert(51%) sepia(100%) saturate(1422%)
+                        hue-rotate(178deg) brightness(92%) contrast(86%);
+                }
+            }
+
+            .image-list-box {
+                width: 100%;
+                overflow-y: auto;
+                height: calc(100vh - 84px);
+
+                .image {
+                    margin-left: 5px;
+                }
+
+                .list-image {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .grid-image {
+                    width: 31.5%;
+                    height: 110px;
+                }
+
+                .mini-loader {
+                    border: 4px solid $colorLightGrey;
+                    border-top: 4px solid $colorBlue;
+                    border-radius: 50%;
+                    width: 20px;
+                    height: 20px;
+                    animation: spin 2s linear infinite;
+                    margin: 0 auto;
+                    margin-top: 5px;
+                }
+            }
+
+            .image-preview {
+                width: 375px;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                position: absolute;
+                z-index: 1000;
+                top: 0;
+                display: none;
+
+                .close-preview {
+                    width: 100%;
+                    height: 35px;
+                    text-align: right;
+
+                    .close-icon {
+                        width: 30px;
+                        height: 30px;
+                        filter: brightness(0) invert(1);
+                        margin-top: 5px;
+                        margin-right: 5px;
+                    }
+                }
+
+                .image-content {
+                    width: 100%;
+                    overflow-y: auto;
+                    height: calc(100% - 40px);
+                    overflow-x: hidden;
+
+                    .large-image {
+                        width: 90%;
+                        margin: 60px auto;
+                        text-align: center;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .image-info {
+                        width: 100%;
+                        margin-left: 5px;
+                        font-size: 14px;
+
+                        .info-content {
+                            display: flex;
+
+                            .image-info-top-left {
+                                width: 57%;
+                                padding-left: 5px;
+                                display: inline-block;
+
+                                .avatar-image {
+                                    border-radius: 50%;
+                                    width: 30px;
+                                    height: 30px;
+                                    margin-right: 6px;
+                                }
+
+                                .username {
+                                    font-size: 18px;
+                                    color: $colorBeige;
+                                    display: inline-block;
+                                    position: relative;
+                                    top: -10px;
+                                }
+                            }
+
+                            .image-info-top-right {
+                                width: 38%;
+                                display: inline-block;
+                                padding-top: 8px;
+
+                                .info {
+                                    color: $colorBeige;
+                                    position: relative;
+                                    top: -5px;
+                                    margin-right: 12px;
+                                }
+                            }
+                        }
+
+                        .icon {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 6px;
+                            filter: brightness(0) invert(1);
+                        }
+
+                        .data {
+                            margin: 0;
+                            color: $colorBeige;
+                            padding-left: 5px;
+                            margin-top: 2px;
+
+                            #portfolio-link {
+                                color: $colorBeige;
+                            }
+
+                            .media-link {
+                                margin-left: 10px;
+                                position: relative;
+                                top: -7px;
+                                color: $colorBeige;
+                            }
+                        }
+
+                        .m-b-20 {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

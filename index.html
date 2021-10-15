@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+        <script src="assets/js/script.js"></script>
+        <title>Unsplash image view</title>
+    </head>
+    <body>
+        <section class="section">
+            <div class="loader"></div>
+            <div class="all-content">
+                <div class="image-preview-picker">
+                    <img class="list-icon" src="assets/images/list-outline.svg" onclick="changePreview(true)">
+                    <img class="grid-icon active" src="assets/images/grid-outline.svg" onclick="changePreview(false)">
+                </div>
+                <div class="image-list-box">
+                </div>
+                <div class="image-preview">
+                    <div class="close-preview">
+                        <img class="close-icon" src="assets/images/close-circle-outline.svg" onclick="closePreview()">
+                    </div>
+                    <div class="image-content">
+                        <div class="large-image">
+                            <img id="full-image" src="assets/images/images.jfif" alt="default">
+                        </div>
+                        <div class="image-info">
+                            <div class="info-content">
+                                <div class="image-info-top-left">
+                                    <img class="avatar-image" src="assets/images/download.jfif">   
+                                    <p class="username"></p>
+                                </div>
+                                <div class="image-info-top-right">
+                                    <img class="icon" src="assets/images/heart-outline.svg"><span id="likes" class="info">2.500</span>
+                                    <img class="icon" src="assets/images/cloud-download-outline.svg"><span id="downloads" class="info">2.500</span>
+                                </div>
+                            </div>
+                            <p class="data m-b-20">Portfolio: <a id="portfolio-link" href=""></a></p>
+                            <p class="data"><img class="icon" src="assets/images/logo-instagram.svg"><a id="instagram-link" class="media-link" href=""></a></p>
+                            <p class="data"><img class="icon" src="assets/images/logo-twitter.svg"><a id="twitter-link" class="media-link" href=""></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

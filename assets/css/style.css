@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+}
+body .section {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+body .section .loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+  margin-top: 60%;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body .section .all-content {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  display: none;
+}
+body .section .all-content .image-preview-picker {
+  margin: 0 auto;
+  padding-top: 30px;
+  display: table;
+  margin-bottom: 20px;
+}
+body .section .all-content .image-preview-picker .list-icon {
+  width: 25px;
+  height: 30px;
+  margin: 0 10px;
+}
+body .section .all-content .image-preview-picker .grid-icon {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+}
+body .section .all-content .image-preview-picker .active {
+  filter: invert(51%) sepia(100%) saturate(1422%) hue-rotate(178deg) brightness(92%) contrast(86%);
+}
+body .section .all-content .image-list-box {
+  width: 100%;
+  overflow-y: auto;
+  height: calc(100vh - 84px);
+}
+body .section .all-content .image-list-box .image {
+  margin-left: 5px;
+}
+body .section .all-content .image-list-box .list-image {
+  width: 100%;
+  height: auto;
+}
+body .section .all-content .image-list-box .grid-image {
+  width: 31.5%;
+  height: 110px;
+}
+body .section .all-content .image-list-box .mini-loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+body .section .all-content .image-preview {
+  width: 375px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  display: none;
+}
+body .section .all-content .image-preview .close-preview {
+  width: 100%;
+  height: 35px;
+  text-align: right;
+}
+body .section .all-content .image-preview .close-preview .close-icon {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+  margin-top: 5px;
+  margin-right: 5px;
+}
+body .section .all-content .image-preview .image-content {
+  width: 100%;
+  overflow-y: auto;
+  height: calc(100% - 40px);
+  overflow-x: hidden;
+}
+body .section .all-content .image-preview .image-content .large-image {
+  width: 90%;
+  margin: 60px auto;
+  text-align: center;
+}
+body .section .all-content .image-preview .image-content .large-image img {
+  width: 100%;
+}
+body .section .all-content .image-preview .image-content .image-info {
+  width: 100%;
+  margin-left: 5px;
+  font-size: 14px;
+}
+body .section .all-content .image-preview .image-content .image-info .info-content {
+  display: flex;
+}
+body .section .all-content .image-preview .image-content .image-info .info-content .image-info-top-left {
+  width: 57%;
+  padding-left: 5px;
+  display: inline-block;
+}
+body .section .all-content .image-preview .image-content .image-info .info-content .image-info-top-left .avatar-image {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
+}
+body .section .all-content .image-preview .image-content .image-info .info-content .image-info-top-left .username {
+  font-size: 18px;
+  color: #e5e4e1;
+  display: inline-block;
+  position: relative;
+  top: -10px;
+}
+body .section .all-content .image-preview .image-content .image-info .info-content .image-info-top-right {
+  width: 38%;
+  display: inline-block;
+  padding-top: 8px;
+}
+body .section .all-content .image-preview .image-content .image-info .info-content .image-info-top-right .info {
+  color: #e5e4e1;
+  position: relative;
+  top: -5px;
+  margin-right: 12px;
+}
+body .section .all-content .image-preview .image-content .image-info .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  filter: brightness(0) invert(1);
+}
+body .section .all-content .image-preview .image-content .image-info .data {
+  margin: 0;
+  color: #e5e4e1;
+  padding-left: 5px;
+  margin-top: 2px;
+}
+body .section .all-content .image-preview .image-content .image-info .data #portfolio-link {
+  color: #e5e4e1;
+}
+body .section .all-content .image-preview .image-content .image-info .data .media-link {
+  margin-left: 10px;
+  position: relative;
+  top: -7px;
+  color: #e5e4e1;
+}
+body .section .all-content .image-preview .image-content .image-info .m-b-20 {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
